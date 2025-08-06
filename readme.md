@@ -64,12 +64,14 @@ AlphaFX has been tested across multiple scenarios using the `strategy_tester.py`
 - Total Trades: 5
 - Duration: 5 days
 - Execution Style: High-conviction, low-frequency
-- Initial Balance: $15,000  
-- Final Balance: $21,066  
+- Initial Balance: $15,000
+- Final Balance: $21,066
 - Net Profit: $6,066  
-- Return: +40.4%  
-- Win Rate: 80%  
-- Profit Factor: 118.1  
+- Return: +40.4%
+- Win Rate: 80%
+- Profit Factor: 118.1
+- Sharpe Ratio: 2.21
+- Signal Efficiency: 34.4%
 
 ![Rolling Performance](plots/backtest1_overview_showcase.png)
 
@@ -80,10 +82,10 @@ AlphaFX has been tested across multiple scenarios using the `strategy_tester.py`
 - Total Trades: 11
 - Duration: 3 days
 - Execution Style: Higher-frequency, aggressive sizing
-- Initial Balance: $10,000  
-- Final Balance: $14,925  
-- Net Profit: $4,925  
-- Return: +49.2%  
+- Initial Balance: $10,000
+- Final Balance: $14,925
+- Net Profit: $4,925
+- Return: +49.2%
 - Win Rate: 100%  
 - Profit Factor: 1000.0  
 - Sharpe Ratio: 4.58  
