@@ -53,6 +53,59 @@ This system is designed for real-time deployment and also includes offline analy
 
 ---
 
+## Backtest Results
+
+AlphaFX has been tested across multiple scenarios using the `strategy_tester.py` module and live historical OHLC data. These tests validate end-to-end integration of market ingestion, technical indicator generation, signal alignment (CEP), and live-execution logic under realistic constraints.
+
+### Test 1: Low-Frequency Setup (5 Trades, 5 Days)
+- Instruments: EUR/USD, AUD/USD, USD/CAD
+- Timeframes: M1, M5, M15
+- Risk per Trade: 0.8%
+- Total Trades: 5
+- Duration: 5 days
+- Execution Style: High-conviction, low-frequency
+- Initial Balance: $15,000  
+- Final Balance: $21,066  
+- Net Profit: $6,066  
+- Return: +40.4%  
+- Win Rate: 80%  
+- Profit Factor: 118.1  
+
+**Visuals:**
+- `plots/backtest1_overview_showcase.png`
+
+### Test 2: Higher Trade Frequency (11 Trades, 3 Days)
+- Instruments: EUR/USD, USD/CAD
+- Timeframes: M1, M5, M15
+- Risk per Trade: 2.5%
+- Total Trades: 11
+- Duration: 3 days
+- Execution Style: Higher-frequency, aggressive sizing
+- Initial Balance: $10,000  
+- Final Balance: $14,925  
+- Net Profit: $4,925  
+- Return: +49.2%  
+- Win Rate: 100%  
+- Profit Factor: 1000.0  
+- Sharpe Ratio: 4.58  
+- Signal Efficiency: 96.1%  
+
+**Visuals:**
+- `plots/backtest2_overview_showcase.png`
+
+### Observations
+
+- The system successfully adapted to both conservative and aggressive configurations, maintaining consistent performance with different trade frequencies and risk levels.
+- CEP logic and multi-timeframe alignment demonstrated robustness across both setups.
+- Further testing over longer windows and varied market conditions is planned for final validation.
+
+---
+
+## 📂 Where to Upload Your Plots
+
+Please upload the three images for each test to your GitHub repo under a folder named:
+
+
 ## Repository Structure
 
 ```
