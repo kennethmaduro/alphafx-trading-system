@@ -71,8 +71,7 @@ AlphaFX has been tested across multiple scenarios using the `strategy_tester.py`
 - Win Rate: 80%  
 - Profit Factor: 118.1  
 
-**Visuals:**
-- `plots/backtest1_overview_showcase.png`
+![Rolling Performance](plots/backtest1_overview_showcase.png)
 
 ### Test 2: Higher Trade Frequency (11 Trades, 3 Days)
 - Instruments: EUR/USD, USD/CAD
@@ -90,8 +89,7 @@ AlphaFX has been tested across multiple scenarios using the `strategy_tester.py`
 - Sharpe Ratio: 4.58  
 - Signal Efficiency: 96.1%  
 
-**Visuals:**
-- `plots/backtest2_overview_showcase.png`
+![Rolling Performance](plots/backtest2_overview_showcase.png)
 
 ### Observations
 
@@ -100,11 +98,6 @@ AlphaFX has been tested across multiple scenarios using the `strategy_tester.py`
 - Further testing over longer windows and varied market conditions is planned for final validation.
 
 ---
-
-## 📂 Where to Upload Your Plots
-
-Please upload the three images for each test to your GitHub repo under a folder named:
-
 
 ## Repository Structure
 
@@ -122,6 +115,7 @@ AlphaFX/
 ├── performance_analyzer.py     # Post-trade analyzer and visualizer
 ├── requirements.txt
 └── /output                     # Logs, trade CSVs, summaries (excluded via .gitignore)
+└── /plots                      # Backtest results
 ```
 
 ---
